@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins';
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .gaswere{
+            box-shadow: 1px 1px 10px #000;
+            width: 25%;
+            height: 80%;
+        }
+        .igishino{
+            width: 100%;
+            height: 100%;
+        }
+        button{
+            padding: 5px 20px;
+        }
+        video{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="cam()">Live</button>
+    <div class="gaswere">
+        <div class="igishino">
+            <video autoplay="true" id="pussy"></video>
+            <script>
+                function cam(){
+                    let pssy = document.querySelector("#pussy");
+
+                    if(navigator.mediaDevices.getUserMedia){
+                        navigator.mediaDevices.getUserMedia({video : true})
+                        .then(function(isogi){
+                            pssy.srcObject = isogi;
+                        })
+                        .catch(function(error){
+                            console.log("byanze kanigga");
+                        });
+                    }
+                }
+            </script>
+        </div>
+    </div>
+</body>
+</html>

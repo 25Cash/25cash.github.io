@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+body{
+    background: url(images/page.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 165vh;
+    overflow-x: hidden;
+}
+.main{
+    background: rgba(0, 0, 0, 0.623);
+    width: 100%;
+    height: 165vh;
+}
+img{
+    width: 200px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+.form{
+    width: 30%;
+    height: 80vh;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.788);
+    color: #fff;
+    position: relative;
+    top: 100px;
+}
+legend{
+    position: relative;
+    top: 20px;
+    font-size: 30px;
+    font-weight: 900;
+    float: left;
+    left: 20px;
+}
+input{
+    display: block;
+    margin-bottom: 20px;
+    width: 90%;
+    height: 6vh;
+    position: relative;
+    top: 50px;
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+    outline: none;
+    color: #fff;
+    background: rgb(53, 52, 52);
+}
+button{
+    position: relative;
+    background: #ce0707;
+    width: 90%;
+    height: 6vh;
+    border-radius: 2px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    top: 80px;
+    right: 10px;
+}
+#check{
+    width: 20px;
+    border-radius: 2px;
+    border: none;
+    position: relative;
+    float: left;
+    left: 20px;
+    top: 140px;
+    background: rgb(53, 52, 52);
+}
+.rem{
+    position: relative;
+    top: 109px;
+    left: 30px;
+    float: left;
+    color: rgb(143, 140, 140);
+}
+.help{
+    position: relative;
+    top: 109px;
+    right: 30px;
+    float: right;
+    color: rgb(143, 140, 140);
+}
+.new{
+    position: relative;
+    top: 209px;
+    left: 20px;
+    float: left;
+    color: rgb(143, 140, 140);
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer{
+    width: 100%;
+    height: 45vh;
+    position: relative;
+    top: 220px;
+    background: rgba(0, 0, 0, 0.788);
+    color: rgb(143, 140, 140);
+    list-style: none;
+}
+.links{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.column1{
+    position: relative;
+    left: 300px;
+    margin-top: 50px;
+    margin-right: 100px;
+}
+.column2{
+    position: relative;
+    left: 300px;
+    margin-top: 110px;
+    margin-right: 100px;
+}
+.column3{
+    position: relative;
+    left: 300px;
+    margin-top: 110px;
+    margin-right: 100px;
+}
+.column4{
+    position: relative;
+    left: 300px;
+    margin-top: 110px;
+    margin-right: 50px;
+}
+h4{
+    margin-bottom: 40px;
+}
+li{
+    cursor: pointer;
+}

@@ -1,0 +1,547 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+    outline: none;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: url(images/background.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.land{
+    width: 100%;
+    height: 104.7vh;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.76),rgba(0, 0, 0, 0.438));
+    padding: 20px;
+    border-bottom: 5px solid rgb(41, 41, 41);
+}
+.land img{
+    width: 200px;
+    height: 50px;
+    position: relative;
+    top: 10px;
+    left: 50px;
+}
+.sign_in{
+    position: relative;
+    float: right;
+    top: 10px;
+    right: 50px;
+    padding: 7px 15px;
+    background-color: #ce0707;
+    border: none;
+    color: #fff;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.description{
+    width: 40%;
+    font-size: 20px;
+    height: 30vh;
+    padding: 10px;
+    color: #fff;
+    position: relative;
+    top: 150px;
+    left: 400px;    
+}
+.input{
+    width: 53.4%;
+    height: 25vh;
+    padding: 10px;
+    position: relative;
+    top: 120px;
+    left: 350px;
+    color: #fff;
+}
+.input p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.input input{
+    width: 100%;
+    height: 8vh;
+    padding: 10px;
+    outline: none;
+    border: none;
+    position: relative;
+    right: 20px;
+    font-size: 17px;
+}
+.input button{
+    width: 24%;
+    height: 8vh;
+    position: absolute;
+    right: 30px;
+    border: none;
+    color: #fff;
+    background: #ce0707;
+    font-size: 21px;
+    cursor: pointer;
+}
+.enjoy{
+    width: 100%;
+    height: 80vh;
+    background: #000;
+    position: relative;
+    float: left;
+    color: #fff;
+    right: 0px;
+    padding: 20px;
+    overflow: hidden;
+    border-bottom: 5px solid rgb(41, 41, 41);
+}
+.enjoy img{
+    width: 450px;
+    position: relative;
+    float: right;
+    right: 100px;
+    top: 100px;
+}
+.decription{
+    padding: 10px;
+    width: 40%;
+    height: 40vh;
+    font-size: 24px;
+    position: relative;
+    top: 200px;
+    left: 100px;
+}
+.download{
+    width: 100%;
+    height: 60vh;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    overflow: hidden;
+    border-bottom: 5px solid rgb(41, 41, 41);
+}
+.download img{
+    position: relative;
+    top: 15px;
+    float: left;
+    left: 100px;
+    opacity: .8;
+}
+.text{
+    font-size: 22px;
+    position: relative;
+    width: 40%;
+    float: right;
+    top: 100px;
+    right: 100px;
+    padding: 10px;
+}
+.every{
+    width: 100%;
+    height: 50vh;
+    background: #000;
+    color: #fff;
+    border-bottom: 5px solid rgb(41, 41, 41);
+    padding: 10px;
+    overflow: hidden;
+}
+.every img{
+    width: 400px;
+    position: relative;
+    float: right;
+    right: 100px;
+    top: 50px;
+}
+.everywhere{
+    padding: 10px;
+    overflow: hidden;
+    font-size: 20px;
+    width: 40%;
+    float: left;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+.kids{
+    width: 100%;
+    height: 60vh;
+    background: #000;
+    color: #fff;
+    border-bottom: 5px solid rgb(41, 41, 41);
+}
+.kids img{
+    width: 400px;
+    position: relative;
+    left: 100px;
+    top: 50px;
+    opacity: .8;
+}
+.create{
+    width: 40%;
+    height: 25vh;
+    font-size: 21px;
+    padding: 10px;
+    float: right;
+    position: relative;
+    right: 100px;
+    top: 150px;
+}
+.bottom{
+    width: 100%;
+    height: 125vh;
+    background: #000;
+    color: #fff;
+    overflow: hidden;
+    border-bottom: 5px solid rgb(41, 41, 41);
+}
+.bottom h1{
+    font-size: 35px;
+    position: relative;
+    top: 100px;
+}
+.first{
+    width: 50%;
+    height: 8vh;
+    position: relative;
+    top: 150px;
+    left: 335px;
+    padding: 10px;
+    background: rgb(36, 35, 35);
+    overflow: hidden;
+    transition: .4s ease;
+}
+.first i{
+    font-size: 25px;
+    float: right;
+    position: relative;
+    bottom: 31px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+#plus{
+    position: relative;
+    left: 0px;
+    visibility: hidden;
+}
+.first p{
+    margin-top: 30px;
+}
+#check{
+    display: none;
+}
+#check:checked ~ .first #x{
+    visibility: hidden;
+   
+}
+#check:checked ~ .first #plus{
+    visibility: visible;
+    position: relative;
+    bottom: 31px;
+   
+}
+#check:checked ~ .first{
+    height: 53vh;
+}
+
+
+.second{
+    width: 50%;
+    height: 8vh;
+    position: relative;
+    top: 160px;
+    left: 335px;
+    padding: 10px;
+    background: rgb(36, 35, 35);
+    overflow: hidden;
+    transition: .4s ease;
+}
+.second i{
+    position: relative;
+    float: right;
+    bottom: 31px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.second p{
+    margin-top: 30px;
+}
+#plusi{
+    position: relative;
+    left: -1px;
+    visibility: hidden;
+}
+.second p{
+    margin-top: 30px;
+}
+#cheche{
+    display: none;
+}
+#cheche:checked ~ .second #cross{
+    visibility: hidden;
+   
+}
+#cheche:checked ~ .second #plusi{
+    visibility: visible;
+    position: relative;
+    bottom: 31px;
+   
+}
+#cheche:checked ~ .second{
+    height: 53vh;
+}
+
+
+.third{
+    width: 50%;
+    height: 8vh;
+    position: relative;
+    top: 170px;
+    left: 335px;
+    padding: 10px;
+    background: rgb(36, 35, 35);
+    overflow: hidden;
+    transition: .4s ease;
+}
+.third i{
+    position: relative;
+    float: right;
+    bottom: 31px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.third p{
+    margin-top: 30px;
+}
+.third #plusi{
+    position: relative;
+    left: -1px;
+    visibility: hidden;
+}
+.third p{
+    margin-top: 30px;
+}
+#chec{
+    display: none;
+}
+#chec:checked ~ .third #cross{
+    visibility: hidden;
+   
+}
+#chec:checked ~ .third #plusi{
+    visibility: visible;
+    position: relative;
+    bottom: 31px;
+   
+}
+#chec:checked ~ .third{
+    height: 53vh;
+}
+
+.fourth{
+    width: 50%;
+    height: 8vh;
+    position: relative;
+    top: 180px;
+    left: 335px;
+    padding: 10px;
+    background: rgb(36, 35, 35);
+    overflow: hidden;
+    transition: .4s ease;
+}
+.fourth i{
+    position: relative;
+    float: right;
+    bottom: 31px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.fourth p{
+    margin-top: 30px;
+}
+.fourth #plusi{
+    position: relative;
+    left: -1px;
+    visibility: hidden;
+}
+.fourth p{
+    margin-top: 30px;
+}
+#che{
+    display: none;
+}
+#che:checked ~ .fourth #cross{
+    visibility: hidden;
+   
+}
+#che:checked ~ .fourth #plusi{
+    visibility: visible;
+    position: relative;
+    bottom: 31px;
+   
+}
+#che:checked ~ .fourth{
+    height: 53vh;
+}
+
+
+.fifth{
+    width: 50%;
+    height: 8vh;
+    position: relative;
+    top: 190px;
+    left: 335px;
+    padding: 10px;
+    background: rgb(36, 35, 35);
+    overflow: hidden;
+    transition: .4s ease;
+}
+.fifth i{
+    position: relative;
+    float: right;
+    bottom: 31px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.fifth p{
+    margin-top: 30px;
+}
+.fifth #plusi{
+    position: relative;
+    left: -1px;
+    visibility: hidden;
+}
+.fifth p{
+    margin-top: 30px;
+}
+#ch{
+    display: none;
+}
+#ch:checked ~ .fifth #cross{
+    visibility: hidden;
+   
+}
+#ch:checked ~ .fifth #plusi{
+    visibility: visible;
+    position: relative;
+    bottom: 31px;
+   
+}
+#ch:checked ~ .fifth{
+    height: 53vh;
+}
+
+
+.sixth{
+    width: 50%;
+    height: 8vh;
+    position: relative;
+    top: 200px;
+    left: 335px;
+    padding: 10px;
+    background: rgb(36, 35, 35);
+    overflow: hidden;
+    transition: .4s ease;
+    z-index: 1;
+}
+.sixth i{
+    position: relative;
+    float: right;
+    bottom: 31px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.sixth p{
+    margin-top: 30px;
+}
+.sixth #plusi{
+    position: relative;
+    left: -1px;
+    visibility: hidden;
+}
+.sixth p{
+    margin-top: 30px;
+}
+#c{
+    display: none;
+}
+#c:checked ~ .sixth #cross{
+    visibility: hidden;
+   
+}
+#c:checked ~ .sixth #plusi{
+    visibility: visible;
+    position: relative;
+    bottom: 31px;
+   
+}
+#c:checked ~ .sixth{
+    height: 53vh;
+}
+.inputi{
+    position: relative;
+    top: 250px;
+    left: 330px;
+    padding: 10px;
+    width: 53.4%;
+    height: 20vh;
+}
+.inputi input{
+    width: 100%;
+    height: 8vh;
+    padding: 10px;
+    outline: none;
+    border: none;
+    position: relative;
+    top: 20px;
+    right: 20px;     
+    font-size: 17px;
+}
+.inputi button{
+    width: 24%;
+    height: 8vh;
+    position: absolute;
+    top: 55px;
+    right: 30px;
+    border: none;
+    color: #fff;
+    background: #ce0707;
+    font-size: 21px;
+    cursor: pointer;
+}
+.menus{
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    background-color: #000;
+    color: rgb(102, 97, 97);
+}
+.listone{
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    overflow: hidden;
+    padding: 20px;
+    font-size: 20px;
+    margin-left: 20px;
+    list-style: none;
+}
+.column1{
+    margin-right: 40px;
+}
+.column2{
+    margin-right: 40px;
+}
+.column3{
+    margin-right: 40px;
+}
+li{
+    cursor: pointer;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IG live</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins';
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(26, 25, 25);
+            width: 100%;
+            height: 100vh;
+        }
+        .container{
+            border: 1px solid #000;
+            background: linear-gradient(to bottom left, purple, purple , red, orange,  yellow);
+            width: 25%;
+            height: 20vh;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: -2;
+        }
+        .container::before{
+            content: '';
+            position: absolute;
+            width: 130px;
+            height: 125px;
+            background: black;
+            border-radius: 100%;
+            z-index: -1;
+        }
+        .holder{
+            border: 1px solid #ffffff3f;
+            width: 85%;
+            height: 85%;
+            border-radius: 100%;
+            box-shadow: inset 2px 2px 10px #ffffff3f,
+                        inset -2px -2px 10px #ffffff3f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            z-index: 1;
+        }
+        .holder::before{
+            content: '';
+            width: 88px;
+            height: 88px;
+            border-radius: 100%;
+            box-shadow: inset 3px 3px 10px #ffffff3f,
+                        inset -3px -3px 10px #ffffff3f;
+            border: 1px solid #ffffff3f;
+            position: absolute;
+            animation: grow .8s linear infinite;
+            z-index: 2;
+        }
+        img{
+            width: 75%;
+            height: 75%;
+            border-radius: 100%;
+            z-index: 1;
+            animation: shrink .8s infinite;
+        }
+        span{
+            border: 3px solid #000;
+            background-color: rgb(255, 1, 65);
+            position: relative;
+            top: 65px;
+            right: 90px;
+            color: #fff;
+            padding: 0.8px 6px;
+            cursor: pointer;
+            font-weight: 900;
+        }
+        .stream{
+            box-shadow: 1px 1px 30px rgb(0, 0, 0);
+            width: 45%;
+            height: 69vh;
+            overflow: hidden;
+            position: relative;
+            top: -10px;
+        }
+        p{
+            color: #fff;
+            font-size: 24px;
+            position: relative;
+            top: 100px;
+            right: 170px;
+        }
+        .main{
+            width: 40%;
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="holder">
+               <img src="images/flower.jpg" alt="">
+            </div>
+        </div>
+        <span onclick="live()">LIVE</span>
+        <p>25cash__</p>
+    </div>
+    <div class="stream">
+        
+    <video autoplay="true" id="webcam"></video>
+
+    </div>
+    <script>
+        function live(){
+        let video = document.querySelector("#webcam");
+
+        if (navigator.mediaDevices.getUserMedia){
+            navigator.mediaDevices.getUserMedia({video : true})
+            .then(function(liver){
+                video.srcObject = liver;
+            })
+            .catch (function (error){
+                console.log("something went wrong!");
+            })
+
+        }
+        else{
+            console.log("getUsermedia not supported");
+        }
+    }
+    </script>
+</body>
+</html>
