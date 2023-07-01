@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+body{
+    width: 100%;
+}
+input::-webkit-inner-spin-button{
+    display: none;
+}
+.main {
+    width: 100%;
+    display: flex;
+/*    border: 1px solid red;*/
+overflow-x: hidden;
+}
+.main .nav{
+    display: flex;
+    width: 25%;
+    height: 100vh;
+    padding: 15px;
+    background: #333;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.main .nav .left{
+    display: flex;
+    flex-direction: column;
+}
+.main .nav .left a{
+    margin: 20px 10px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;   
+    width: 250px;
+    padding: 8px;
+    border: none;
+    background: #fff;
+    color: #000;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.main .center{
+    width: 75%;
+}
+.main .logo{
+    width: 100%;
+    box-shadow: 0px 0px 10px -5px #333;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+.h1 h1{
+    display: flex;
+    font-size: 21px;
+    padding: 25px;
+}
+h1 img{
+    width: 50px;
+    position: relative;
+    top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.logo h1{
+/*    margin-bottom: 30px;*/
+}
+.main .center .content{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 25px;
+    gap: 30px;
+}
+.main .center .content .card{
+    height: 120px;
+    box-shadow: 0px 0px 10px -5px #333;
+    width: 300px;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    padding: 30px;
+    font-size: 12px;
+}
+.main .center .content .card p{
+    margin: 50px 0;
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+}
+.bottom{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+table{
+    border: none;
+}
+td{
+    padding: 5px 15px;
+    font-weight: 600;
+}
+tr:nth-child(odd){
+    background: #e4e4e4e4;
+}
+.bottom a{
+    width: 100px;
+    padding: 4px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+.bottom .btn a{
+    color: #333;
+}
+.upd{
+    background: limegreen;
+}
+.del{
+    background: red;
+}
+button{
+    width: 100px;
+    padding: 8px;
+    border: 2px solid #333;
+    background: transparent;
+    color: #333;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.add{
+    position: relative;
+    top: 30%;
+    left: 5%;
+}
+.add button{
+    width: 20%;
+    padding: 10px;
+    border: none;
+    background: #555;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}

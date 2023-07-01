@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    .navbar{
+        box-shadow: 0px 0px 20px -8px steelblue;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        nav{
+            a{
+                background-color: #fff;
+                padding: 5px 15px;
+                border-radius: 5px;
+                text-decoration: none;
+                color: black;
+                border: 2px solid steelblue;
+                transition: .3s;
+                &:hover{
+                    background-color: steelblue;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .body{
+        width: 100%;
+        // border: 1px solid red;
+        padding: 20px;
+        display: flex;
+        height: 92.5%;
+        .left{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .right{
+            height: 100%;
+            width: 50%;
+            background-image: url(../img/pexels-yura-forrat-15327180.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            // border: 1px solid red;
+        }
+    }
+}

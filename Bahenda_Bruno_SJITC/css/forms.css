@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .form {
+  box-shadow: 0px 0px 20px -5px steelblue;
+  border-radius: 5px;
+  padding: 20px 10px;
+  display: flex;
+  width: 60%;
+}
+body .form .login {
+  width: 50%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  gap: 41px;
+  padding: 0 10px;
+}
+body .form .login input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 3px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+}
+body .form .login input:focus {
+  border: 3px solid steelblue;
+}
+body .form .login button {
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #ccc;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.3s;
+}
+body .form .login button:hover {
+  color: #fff;
+  background-color: steelblue;
+}
+body .form .register {
+  width: 50%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  gap: 8px;
+  padding: 0 10px;
+}
+body .form .register input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 3px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+}
+body .form .register input:focus {
+  border: 3px solid steelblue;
+}
+body .form .register button {
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #ccc;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.3s;
+}
+body .form .register button:hover {
+  color: #fff;
+  background-color: steelblue;
+}
+body .forms {
+  box-shadow: 0px 0px 20px -5px steelblue;
+  border-radius: 5px;
+  padding: 50px 10px;
+  display: flex;
+  width: 30%;
+}
+body .forms .login {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  gap: 41px;
+  padding: 0 10px;
+}
+body .forms .login input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 3px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+}
+body .forms .login input:focus {
+  border: 3px solid steelblue;
+}
+body .forms .login button {
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #ccc;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.3s;
+}
+body .forms .login button:hover {
+  color: #fff;
+  background-color: steelblue;
+}
+body .forms .register {
+  width: 50%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  gap: 8px;
+  padding: 0 10px;
+}
+body .forms .register input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 3px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+}
+body .forms .register input:focus {
+  border: 3px solid steelblue;
+}
+body .forms .register button {
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #ccc;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.3s;
+}
+body .forms .register button:hover {
+  color: #fff;
+  background-color: steelblue;
+}/*# sourceMappingURL=forms.css.map */

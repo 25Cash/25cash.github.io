@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+body {
+  width: 100%;
+}
+body .main {
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.671), rgba(17, 17, 17, 0.466)), url(../imgs/pexels-beyzaa-yurtkuran-15419725.jpg) no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .main .divs {
+  width: 100%;
+  height: 100vh;
+}
+body .main #home .top {
+  box-shadow: 0px 0px 20px -10px #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
+}
+body .main #home .top h3 {
+  font-size: 30px;
+}
+body .main #home .top nav {
+  display: flex;
+  gap: 5px;
+}
+body .main #home .top nav a {
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s;
+  border-radius: 3px;
+}
+body .main #home .top nav a:hover {
+  background-color: #000;
+  color: #fff;
+}
+body .main #home .body {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+body .main #home .body .center {
+  background-color: #fff;
+  border-radius: 3px;
+  width: 70%;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0px 0px 20px -8px #000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body .main #home .body .center .search {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+body .main #home .body .center .search input {
+  width: 90%;
+  padding: 10px 20px;
+  outline: none;
+  border: 1px solid #000;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+body .main #home .body .center .search label {
+  background-color: #000;
+  color: #fff;
+  width: 10%;
+  padding: 9px 30px;
+  border-radius: 0;
+  cursor: pointer;
+}
+body .main #home .body .center a {
+  text-decoration: none;
+  color: #fff;
+  width: 30%;
+  padding: 10px 30px;
+  background-color: #000;
+  text-align: center;
+  border-radius: 3px;
+  transform: translate(320px, 0);
+  transition: 0.3s;
+}
+body .main #home .body .center a:hover {
+  background-color: #333;
+}
+body .main #read {
+  width: 100%;
+  height: 120vh;
+  background-color: #fff;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 100px 30px 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+body .main #read img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transition: 0.7s;
+}
+body .main #read .body {
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0px 0px 10px -5px #000;
+  display: flex;
+  gap: 30px;
+}
+body .main #read .body .news {
+  width: 25%;
+  height: 400px;
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer;
+}
+body .main #read .body .news:hover .description {
+  bottom: 407px;
+}
+body .main #read .body .news:hover img {
+  transform: scale(1.1);
+  filter: blur(2px);
+}
+body .main #read .body .news .description {
+  position: relative;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5803921569);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 100%;
+  width: 100%;
+  bottom: 810px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+body .main #read span {
+  font-size: 20px;
+}
+body .main #read span a {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .main #read span a:hover {
+  text-decoration: underline;
+}
+body .main #contact {
+  width: 100%;
+  height: 120vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.671), rgba(17, 17, 17, 0.466)), url(../imgs/pexels-alexander-ant-4585185.jpg) no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 30px 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: #fff;
+  padding: 30px;
+}
+body .main #contact .form {
+  width: 100%;
+  box-shadow: 0px 0px 10px -5px #000;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px 60px;
+  font-family: "poppins";
+}
+body .main #contact .form h1 {
+  margin: 10px 0;
+  color: #000;
+}
+body .main #contact .form input {
+  padding: 20px 10px;
+  margin: 10px 0;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+body .main #contact .form #fname {
+  width: 49.9%;
+  background: rgba(141, 141, 141, 0.3960784314);
+}
+body .main #contact .form #lname {
+  width: 49.6%;
+  background: rgba(141, 141, 141, 0.3960784314);
+}
+body .main #contact .form #mail {
+  width: 49.9%;
+  background: rgba(95, 95, 95, 0.3960784314);
+}
+body .main #contact .form #phone {
+  width: 49.6%;
+  background: rgba(95, 95, 95, 0.3960784314);
+}
+body .main #contact .form #phone::-webkit-inner-spin-button {
+  display: none;
+}
+body .main #contact .form #address {
+  width: 100%;
+  background: rgba(66, 66, 66, 0.3960784314);
+}
+body .main #contact .form #comment {
+  width: 100%;
+  padding: 50px 10px;
+  outline: none;
+  background: rgba(37, 37, 37, 0.3960784314);
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+body .main #contact .form button {
+  background: #000;
+  padding: 20px 70px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  width: 40%;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 17px;
+}
+body .main #contact .form button:hover {
+  background-color: #333;
+}
+body .main #contact .form p {
+  color: #000;
+  margin: 10px 0 0 50px;
+}
+body .main .footer {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px -5px #000;
+  width: 100%;
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+body .main .footer .types {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  width: 30%;
+}
+body .main .footer .types a {
+  text-decoration: none;
+  color: #444;
+  padding: 5px 10px;
+  width: 50%;
+  transition: 0.2s;
+}
+body .main .footer .types a:hover {
+  transform: scale(1.1);
+  color: #000;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,23 @@
+
+.nav{
+	background-color: black;
+}
+.right{
+	float: right;
+	background-color: ;
+	height: 100vh;
+	width: 25%;
+}
+.middle_up{
+	float: ;
+	background-color: ;
+	height: 100vh;
+	width: 25%;
+}
+.left{
+	float: right;
+	background-color: ;
+	height: 100vh;
+	width: 50%;
+	justify-content: center;
+}

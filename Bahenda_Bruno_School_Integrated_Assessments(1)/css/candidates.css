@@ -1,0 +1,112 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins';
+}
+body{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.main{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+.left-nav{
+	box-shadow: 0px 0px 10px #ccc;
+	width: 25%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 10px;
+	padding: 50px 20px;
+	background: #fff;
+	z-index: 10;
+}
+.left-nav a{
+	background: #444;
+	border-radius: 5px;
+	padding: 8px 20px;
+	text-decoration: none;
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	transition: .5s;
+}
+.left-nav a:hover{
+	background: #000;
+} table{
+	width: 95%;
+	border: none;
+	text-align: center;
+	font-size: 12px;
+}
+table td{
+	padding: 10px;
+}
+.body table tr:nth-child(even){
+	background: #999;
+	color: #fff;
+}
+table a{
+	text-decoration: none;
+	color: #fff;
+	background: #000;
+	width: 100%;
+	padding: 5px 20px;
+	border-radius: 5px;
+}
+
+.form{
+	width: 75%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.form form{
+	box-shadow: 0px 0px 10px #ccc;
+	padding: 10px 20px;
+	border-radius: 5px;
+	display: grid;
+	width: 50%;
+	height: fit-content;
+	gap: 10px;
+}
+.form form input{
+	border-top: none;
+	border-bottom: 1px solid #000;
+	border-right: none;
+	border-left: none;
+	padding: 10px 20px;
+	border-radius: 0;
+	outline: none;
+}
+.form form select{
+	border: 1px solid #000;
+	padding: 10px 20px;
+	border-radius: 5px;
+	outline: none;
+}
+.form form button{
+	padding: 10px 20px;
+	border-radius: 5px;
+	background: #444;
+	transition: .5s;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+}
+.form form button:hover{
+	background: #000;
+}
+/*input::-webkit-inner-spin-button{
+	display: none;
+}*/

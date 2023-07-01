@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+    text-decoration: none;
+    color: #000;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    .left{
+        height: 100vh;
+        position: fixed;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px -5px steelblue;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+        padding: 10px;
+        nav{
+            display: grid;
+            width: 100%;
+            gap: 10px;
+            a{
+                padding: 10px 20px;
+                text-align: center;
+                border-radius: 5px;
+                background-color: #dbdbdb;
+                transition: .3s;
+                &:hover{
+                    background-color: steelblue;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .right{
+        width: 80%;
+        float: right;
+        // border: 1px solid red;
+        padding: 20px 10px;
+        display: grid;
+        gap: 20px;
+        .numbers{
+            // border: 1px solid lime;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 100px 10px;
+            .num{
+                box-shadow: 0px 0px 10px -5px steelblue;
+                padding: 20px 30px;
+                display: grid;
+                place-items: center;
+            }
+        }
+        .search{
+            // border: 1px solid red;
+            padding: 10px;
+            input{
+                padding: 8px 10px;
+                border: 3px solid #ccc;
+                border-radius: 3px;
+                width: 70%;
+                outline: none;
+                &:focus{
+                    border: 3px solid steelblue;
+                }
+            }
+            button{
+                border: none;
+                padding: 11px 24px;
+                border-radius: 3px;
+                background-color: #ccc;
+                transition: .3s;
+                cursor: pointer;
+                &:hover{
+                    background-color: steelblue;
+                    color: #ffff;
+                }
+            }
+        }
+        .btns{
+            width: 100%;
+            // border: 1px solid red;
+            padding: 10px;
+            a{
+                background-color: #ccc;
+                padding: 10px 20px;
+                border-radius: 3px;
+                transition: .3s;
+                &:hover{
+                    background-color: steelblue;
+                    color: #fff;
+                }
+            }
+            button{
+                padding: 9px 50px;
+                font-size: 16px;
+                border-radius: 3px;
+                border: none;
+                background-color: #ccc;
+                cursor: pointer;
+                transition: .3s;
+                &:hover{
+                    background-color: steelblue;
+                    color: #fff;
+                }
+            }
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            tr{
+                padding: 10px;
+            }
+            tr:nth-child(even){
+                background-color: #e4e4e4;
+            }
+            a{
+                background-color: green;
+                padding: 3px 10px;
+                border-radius: 3px;
+                color: #fff;
+                transition: .3s;
+                &:hover{
+                    background-color: rgb(0, 168, 0);
+                }
+            }
+        }
+    }
+}

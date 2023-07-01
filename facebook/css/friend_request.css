@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'segoe UI';
+}
+body{
+    width: 100%;
+}
+.main{
+    width: 100%;
+    background: white;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h2{
+    color: #1586f7;
+    height: 10vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.top{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #000;
+}
+.list{
+    background-color: #dfdede;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    gap: 30px;
+}
+h4{
+    margin: 10px 0;
+    font-size: 20px;
+}
+.friend-info{
+    background-color: #fff;
+    width: 35%;
+    border-radius: 5px;
+    border: 1px solid #999999be;
+    box-shadow: 0px 0px 10px #a1a1a1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.profile{
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.data{
+    width: 80%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    padding: 10px;
+}
+span{
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+form{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    width: 48%;
+    padding: 10px 0;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: #ccc;
+}
+.request{
+    background-color: #1586f7;
+    color: #fff;
+}

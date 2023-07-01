@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+input::-webkit-inner-spin-button{
+    display: none;
+}
+body{
+    width: 100%;
+}
+.main {
+    display: flex;
+}
+.main .nav{
+    display: flex;
+    width: 25%;
+    height: 100vh;
+    padding: 15px;
+    background: #333;
+    color: #fff;
+}
+.main .nav .left{
+    display: flex;
+    flex-direction: column;
+}
+.main .nav .left a{
+    margin: 20px 10px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;   
+    width: 250px;
+    padding: 8px;
+    border: none;
+    background: #fff;
+    color: #000;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.main .center{
+    width: 75%;
+}
+.main .links .logo{
+    width: 100%;
+    box-shadow: 0px 0px 10px -5px #333;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+.main .center .links a{
+    text-decoration: none;
+    padding: 5px;
+    color: #000;
+}
+.main .center .links button{
+    width: 80px;
+    padding: 8px;
+    border: none;
+    background: #555;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 0 0 50vh;
+    font-weight: bold;
+}
+.h1 h1{
+    display: flex;
+    font-size: 21px;
+    padding: 25px;
+}
+h1 img{
+    width: 50px;
+    position: relative;
+    top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.logo h1{
+    margin-bottom: 30px;
+}
+.h1 span{
+    font-size: 35px;
+    font-weight: bold;
+    position: relative;
+    left: 200px;
+    top: 20px;
+}
+.main .center .form{
+    width: 40%;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin: 80px 220px;
+    background-color: #555;
+    position: relative;
+    left: 100px;
+    bottom: 70px;
+}
+.form input{
+    padding: 8px;
+    width: 95%;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    margin: 10px;
+}
+.form input::placeholder{
+    color: #222;
+    font-weight: bold;
+}
+.form label{
+    font-weight: bold;
+    padding: 12px;
+    color: #fff;
+}
+span{
+    color: #fff;
+}
+.form input[type="radio"]{
+    width: 20px;
+}
+.form input [type="radio"]{
+    color: #fff;
+}
+.form .btn{
+    display: flex;
+    column-gap: 90px;
+    margin: 0 10px;
+}
+.form .btn button{
+    padding: 10px;
+    width: 135px;
+    cursor: pointer;
+    border: none;
+    background: #222;
+    color: #fff;
+    border-radius: 2px;
+}
+
+
+
+
+
+.main .center .bottom{
+    width: 40%;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin: 80px 220px;
+    background-color: #555;
+    position: relative;
+    left: 100px;
+    bottom: 70px;
+}
+.bottom input{
+    padding: 8px;
+    width: 95%;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    margin: 10px;
+}
+.bottom input::placeholder{
+    color: #222;
+    font-weight: bold;
+}
+.bottom label{
+    font-weight: bold;
+    padding: 12px;
+    color: #fff;
+}
+span{
+    color: #fff;
+}
+.bottom input[type="radio"]{
+    width: 20px;
+}
+.bottom input [type="radio"]{
+    color: #fff;
+}
+.bottom .btn{
+    display: flex;
+    column-gap: 90px;
+    margin: 0 10px;
+}
+.bottom .btn button{
+    padding: 10px;
+    width: 135px;
+    cursor: pointer;
+    border: none;
+    background: #222;
+    color: #fff;
+    border-radius: 2px;
+}

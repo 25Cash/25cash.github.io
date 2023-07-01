@@ -1,0 +1,81 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'book antiqua';
+}
+body{
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 25% 50% 25%;
+	overflow: hidden;
+}
+body.form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+body .form{
+	border: 1px solid #ccc;
+	width: 500px;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+}
+body .form h1{
+	font-size: 25px;
+	margin: 0 auto 10px auto;
+	text-align: center;
+}
+body .form label{
+	display: flex;
+	margin-bottom: 5px;
+}
+body .form input {
+	border: 1px solid #ccc;
+	width: 100%;
+	padding: 7px 10px;
+	outline: none;
+	border-radius: 3px;
+}
+body .form input[readonly]{
+	opacity: .8;
+}
+body .form button{
+	background: teal;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	display: flex;
+	margin: 0 auto;
+	padding: 8px 30px;
+}
+body .form span{
+	display: flex;
+	margin-top: 5px;
+}
+body .form span a{
+	color: teal;
+}
+.left{
+	float: right;
+	background-color: blue;
+	height: 100vh;
+	width: 25%;
+}
+.middle_up{
+	float: center;
+	background-color: red;
+	height: 100vh;
+	width: 50%;
+}
+.right{
+	float: left;
+	background-color: green;
+	height: 100vh;
+	width: 25%;
+}
+}
+}
+

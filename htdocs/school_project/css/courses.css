@@ -1,0 +1,441 @@
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #ccc;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #e6e6e6;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+}
+.main .navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background: #e6e6e6;
+}
+.main .navbar.active {
+  box-shadow: 0px 0px 10px #a7a6a6;
+}
+.main .navbar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .navbar h3 {
+  font-size: 32px;
+}
+.main .navbar nav {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+.main .navbar nav a {
+  padding: 10px 30px;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  color: #444;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+.main .navbar nav a:hover {
+  color: #000;
+}
+.main .navbar .dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+.main .navbar .dropdown:hover .dropdown-content {
+  transform: scale(1.04);
+  pointer-events: all;
+}
+.main .navbar .dropdown .dropdown-content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
+  top: 60px;
+  right: 70px;
+  gap: 5px;
+  padding: 10px 0;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #fff;
+  z-index: 1;
+  pointer-events: none;
+  transform: scale(0);
+  transition: 0.5s ease;
+}
+.main .navbar .dropdown .dropdown-content a {
+  text-decoration: none;
+  color: #000;
+  width: 100%;
+  text-align: center;
+  padding: 10px 50px;
+  transition: 0.4s ease;
+}
+.main .navbar .dropdown .dropdown-content a:hover {
+  background-color: #000;
+  color: #fff;
+}
+.main .body {
+  width: 100%;
+  /*favorites.html*/
+}
+.main .body .left-nav {
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ccc;
+  position: fixed;
+  top: 10px;
+}
+.main .body .left-nav .amasomo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 2px;
+  padding: 10px 0;
+}
+.main .body .left-nav .amasomo a {
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s ease;
+  text-decoration: none;
+  color: #000;
+}
+.main .body .left-nav .amasomo a.active {
+  background-color: #000;
+  color: #fff;
+}
+.main .body .left-nav .amasomo a:hover {
+  background-color: #000;
+  color: #fff;
+}
+.main .body .content {
+  width: 80%;
+  position: absolute;
+  right: 0;
+  top: 60px;
+}
+.main .body .content .read {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px 0;
+}
+.main .body .content .read #start {
+  padding: 10px 40px;
+  border-radius: 50px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.main .body .content .read #start:hover {
+  background-color: #ccc;
+  color: #000;
+  box-shadow: 0px 0px #e6e6e6;
+}
+.main .body .content .read h2 {
+  text-align: center;
+}
+.main .body .content .read .exercises {
+  background-color: #fff;
+  width: 80%;
+  display: grid;
+  gap: 20px;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+}
+.main .body .content .read .exercises .umukoro {
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  display: grid;
+  gap: 20px;
+}
+.main .body .content .read .exercises .umukoro input {
+  outline: none;
+  background-color: #e6e6e6;
+  border: none;
+  padding: 10px 5px;
+  font-size: 16px;
+  width: 10%;
+}
+.main .body .content .read .exercises .umukoro .button {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  width: 30%;
+  padding: 10px 0;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.main .body .content .read .exercises .umukoro .button:hover {
+  background-color: #ccc;
+  color: #000;
+  box-shadow: 0px 0px 10px #444;
+}
+.main .body .content .read .soma {
+  width: 80%;
+  padding: 20px;
+  background-color: #ccc;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: left;
+  flex-direction: column;
+  gap: 20px;
+}
+.main .body .content .read .soma a {
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 40px;
+  width: 30%;
+  text-align: center;
+  border-radius: 50px;
+  transition: 0.5s ease;
+}
+.main .body .content .read .soma a:hover {
+  box-shadow: 0px 0px 10px #444;
+  background-color: #ccc;
+  color: #000;
+}
+.main .body .content .read span {
+  font-size: 18px;
+}
+.main .body .content .read .example {
+  background-color: #fff;
+  width: 80%;
+}
+.main .body .content .read .example .title {
+  background-color: #000;
+  width: 100%;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 20px;
+}
+.main .body .content .read .example .codes {
+  padding: 10px 20px;
+}
+.main .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.main .top button {
+  padding: 10px 40px;
+  border: none;
+  border-radius: 0;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: 0.5s ease;
+}
+.main .top button:hover {
+  background-color: #ccc;
+  color: #000;
+  box-shadow: 0px 0px 10px #444;
+}
+.main .bottom {
+  height: 93vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main .bottom span {
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+}
+.main .bottom .domains {
+  width: 100%;
+  height: 20%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+.main .bottom .domains label {
+  background-color: #000;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff;
+  padding: 10px 30px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: 0.5s ease;
+}
+.main .bottom .domains label:hover {
+  background-color: #ccc;
+  color: #000;
+  box-shadow: 0px 0px 10px #444;
+}
+.main .bottom .title {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+}
+.main .bottom .title h2 {
+  font-size: 18px;
+}
+.main .bottom .courses {
+  width: 100%;
+  height: 60%;
+}
+.main .bottom .courses .software {
+  width: 100%;
+  height: 40%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 20px 30px 20px 120px;
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s ease;
+}
+.main .bottom .courses .software.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.main .bottom .courses .capp {
+  width: 100%;
+  height: 40%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 20px 30px 20px 120px;
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s ease;
+}
+.main .bottom .courses .capp.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.main .bottom .courses .cst {
+  width: 100%;
+  height: 40%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 20px 30px 20px 120px;
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s ease;
+}
+.main .bottom .courses .cst.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.main .bottom .courses .mas {
+  width: 100%;
+  height: 40%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 20px 30px 20px 120px;
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s ease;
+}
+.main .bottom .courses .mas.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.main .bottom .courses .rct {
+  width: 100%;
+  height: 40%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 20px 30px 20px 120px;
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s ease;
+}
+.main .bottom .courses .rct.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.main .bottom .courses .choice {
+  border-radius: 30px;
+  background: #000;
+  color: #fff;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .bottom .courses .choice span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 30px;
+}/*# sourceMappingURL=courses.css.map */

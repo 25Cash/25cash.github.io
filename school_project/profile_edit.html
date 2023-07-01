@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/fontsawesome/all.min.css">
+    <link rel="stylesheet" href="assets/fontsawesome/fontawesome.min.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <title>Profile</title>
+</head>
+<body>
+    <div class="main_edit">
+        <div class="form" id="form">
+            <div class="picture">
+                <form action="#" method="post">
+                    <img src="assets/img/wallpaperflare.com_wallpaper (25).jpg" draggable="false" alt="">
+                    <label for="file" title="Change profile picture"><i class="fa-solid fa-camera"></i></label>
+                    <input type="file" name="img" id="file" accept="image">
+                </form>
+            </div>
+            <form action="#" class="register">
+                <div class="text">
+                    <label>Username : </label>
+                    <input type="text" name="username">
+                    <label>E-mail : </label>
+                    <input type="email" name="email">
+                    <div class="btn-profile">
+                        <label id="open">Save</label>
+                    </div>
+                </div>
+                <div class="keep" id="keep">
+                    <span>Do you wish to keep changes?<p id="counter">0</p></span>
+                    <div class="btns">
+                        <button>Keep changes</button>
+                        <button>Discard</button>
+                    </div>
+                </div>
+            </form>
+            <script>
+                let pop = document.querySelector('#open').addEventListener('click',()=>{
+                    let popup = document.querySelector('#keep').classList.toggle('active');
+                    let counter = document.querySelector('#counter');
+                    setInterval(() => {
+                    let count = 10;
+                        while (count >= 0) {
+                            counter.innerHTML = count;
+                            count++;
+                        }
+                    }, 1000);
+                })
+            </script>
+        </div>
+    </div>
+</body>
+</html>
